@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>star音乐-专属个性定制音乐网站</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--引入boot的文件，引入顺序有要求-->
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/header.css"/>
+    <link rel="stylesheet" href="./css/nav.css"/>
+    <link rel="stylesheet" href="./css/section.css"/>
+    <link rel="stylesheet" href="./css/Cooldog.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/aside.css">
+    <link rel="stylesheet" href="./css/songList.css">
+    <link rel="stylesheet" href="./css/newSongs.css">
+    <link rel="stylesheet" href="./css/topList.css">
+    <link rel="stylesheet" href="./css/mv.css"/>
+    <link rel="stylesheet" href="./css/footer.css"/>
+</head>
+<body>
+    <header>
+        <div class="bg">
+            <span>Star Music</span>
+            <span>星音乐，新音乐，带你认识与你一样热爱音乐的人</span>
+        </div>
+        <div class="icon d-flex">
+            <div>
+                <a href="#">
+                    <img src="images/home_page.png"/>
+                </a>
+            </div>
+            <ul class="list-unstyled d-flex search">
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/open.png"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/search.png"/>
+                    </a>
+                </li>
+                <li>
+                    <input type="text" placeholder="搜索音乐、MV、歌单、用户……"/>
+                </li>
+            </ul>
+            <a name="backSearch"></a>
+            <ul class="list-unstyled d-flex userMsg">
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/msg.png"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span>亿万少女的梦
+                            <img src="images/bottom.png"/>
+                        </span>
+                        <img src="images/icon1.png" class="headPic"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav>
+        <ul class="list-unstyled">
+            <li>
+                <div>
+                    <a href="#backSearch">Search</a>
+                </div>
+                <img src="images/backSearch.png"/>
+            </li>
+            <li>
+                <div>
+                    <a href="#discover">Discover</a>
+                </div>
+                <img src="images/discovery.png"/>
+            </li>
+            <li>
+                <div>
+                    <a href="#songList">SongList</a>
+                </div>
+                <img src="images/songList.png"/>
+            </li>
+            <li>
+                <div>
+                    <a href="#newSong">NewSong</a>
+                </div>
+                <img src="images/newSong.png"/>
+            </li>
+            <li>
+                <div>
+                    <a href="#rank">TopList</a>
+                </div>
+                <img src="images/rank.png"/>
+            </li>
+            <li>
+                <div>
+                    <a href="#mv">MV</a>
+                </div>
+                <img src="images/mv.png"/>
+            </li>
+        </ul>
+    </nav>
+    <div class="d-flex">
+        <section>
+            <!--轮播图-->
+            <div class="Cooldog_container">
+                <div class="Cooldog_content">
+                    <ul>
+                        <li class="p1">
+                            <a href="javascript:;">
+                                <img src="img/banner1.jpg">
+                            </a>
+                        </li>
+                        <li class="p2">
+                            <a href="javascript:;">
+                                <img src="img/banner2.jpg">
+                            </a>
+                        </li>
+                        <li class="p3">
+                            <a href="javascript:;">
+                                <img src="img/banner3.jpg">
+                            </a>
+                        </li>
+                        <li class="p4">
+                            <a href="javascript:;">
+                                <img src="img/banner4.jpg">
+                            </a>
+                        </li>
+                        <li class="p5">
+                            <a href="javascript:;">
+                                <img src="img/banner5.jpg">
+                            </a>
+                        </li>
+                        <li class="p6">
+                            <a href="javascript:;">
+                                <img src="img/banner6.jpg">
+                            </a>
+                        </li>
+                        <li class="p7">
+                            <a href="javascript:;">
+                                <img src="img/banner7.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="javascript:;" class="btn_left carousel-control-prev">
+                    <i class="carousel-control-prev-icon"></i>
+                </a>
+                <a href="javascript:;" class="btn_right carousel-control-next">
+                    <i class="carousel-control-next-icon"></i>
+                </a>
+                <div class="buttons clearfix">
+                    <a href="javascript:;" class="color"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                </div>
+            </div>
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+            <script type="text/javascript" src="js/Cooldog.js"></script>
+            <!--发现版块-->
+            <a name="discover"></a>
+            <div class="disc">
+                <div class="d-flex">
+                    <h2 class="alignLine">
+                        Discover
+                        <span class="animate inline rot">
+                            <span class="bar a1 inline bg-primary"></span>
+                            <span class="bar a2 inline bg-info"></span>
+                            <span class="bar a3 inline bg-success"></span>
+                            <span class="bar a4 inline bg-warning"></span>
+                            <span class="bar a5 inline bg-danger"></span>
+                        </span>
+                    </h2>
+                    <div>
+                        <a href="javascript:;">
+                            <img src="images/refresh.png"  id="refresh"/>
+                        </a>
+                    </div>
+                </div>
+                <ul class="list-unstyled d-flex alignLine">
+                    <li class="content">
+                        <img src="img/p1.jpg"/>
+                        <h6><a href="javascript:;">Crazy Bird</a></h6>
+                        <p><a href="javascript:;">Wild Child</a></p>
+                        <div class="shad"></div>
+                        <a href="javascript:;"><img src="images/play_btn.png" class="ima" alt="1"></a>
+                        <a href="javascript:;"><img src="images/add_list.png" class="add"></a>
+                        <a href="javascript:;"><img src="images/red_heart.png" class="heart" alt="1"></a>
+                    </li>
+                    <li class="content">
+                        <img src="img/p2.jpg"/>
+                        <h6><a href="javascript:;">そばにいるね</a></h6>
+                        <p><a href="javascript:;">青山テルマ</a></p>
+                        <div class="shad"></div>
+                        <a href="javascript:;"><img src="images/play_btn.png" class="ima" alt="1"></a>
+                        <a href="javascript:;"><img src="images/add_list.png" class="add"></a>
+                        <a href="javascript:;"><img src="images/red_heart.png" class="heart" alt="1"></a>
+                    </li>
+                    <li class="content">
+                        <img src="img/p3.jpg"/>
+                        <h6><a href="javascript:;">春风十里</a></h6>
+                        <p><a href="javascript:;">鹿先森乐队</a></p>
+                        <div class="shad"></div>
+                        <a href="javascript:;"><img src="images/play_btn.png" class="ima" alt="1"></a>
+                        <a href="javascript:;"><img src="images/add_list.png" class="add"></a>
+                        <a href="javascript:;"><img src="images/red_heart.png" class="heart" alt="1"></a>
+                    </li>
+                    <li class="content">
+                        <img src="img/p4.jpg"/>
+                        <h6><a href="javascript:;">追光者</a></h6>
+                        <p><a href="javascript:;">岑宁儿</a></p>
+                        <div class="shad"></div>
+                        <a href="javascript:;"><img src="images/play_btn.png" class="ima" alt="1"></a>
+                        <a href="javascript:;"><img src="images/add_list.png" class="add"></a>
+                        <a href="javascript:;"><img src="images/red_heart.png" class="heart" alt="1"></a>
+                    </li>
+                    <li class="content">
+                        <img src="img/p5.jpg"/>
+                        <h6><a href="javascript:;">感谢你曾来过</a></h6>
+                        <p><a href="javascript:;">Ayo97/是阿涵啊</a></p>
+                        <div class="shad"></div>
+                        <a href="javascript:;"><img src="images/play_btn.png" class="ima" alt="1"></a>
+                        <a href="javascript:;"><img src="images/add_list.png" class="add"></a>
+                        <a href="javascript:;"><img src="images/red_heart.png" class="heart" alt="1"></a>
+                    </li>
+                    <li class="content">
+                        <img src="img/p6.jpg"/>
+                        <h6><a href="javascript:;">Radioactive</a></h6>
+                        <p><a href="javascript:;">Imagine Dragons</a></p>
+                        <div class="shad"></div>
+                        <a href="javascript:;"><img src="images/play_btn.png" class="ima" alt="1"></a>
+                        <a href="javascript:;"><img src="images/add_list.png" class="add"></a>
+                        <a href="javascript:;"><img src="images/red_heart.png" class="heart" alt="1"></a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled d-flex alignLine">
+                    <li class="content">
+                        <img src="img/p7.jpg"/>
+                        <h6><a href="javascript:;">喜欢</a></h6>
+                        <p><a href="javascript:;">阿肆</a></p>
+                        <div class="shad"></div>
+                        <a href="javascript:;"><img src="images/play_btn.png" class="ima" alt="1"></a>
+                        <a href="javascript:;"><img src="images/add_list.png" class="add"></a>
+                        <a href="javascript:;"><img src="images/red_heart.png" class="heart" alt="1"></a>
+                    </li>
+                    <li class="content">
+                        <img src="img/p8.jpg"/>
+                        <h6><a href="javascript:;">Lemon</a></h6>
+                        <p><a href="javascript:;">米津玄师</a></p>
+                        <div class="shad"></div>
+                        <a href="javascript:;"><img src="images/play_btn.png" class="ima" alt="1"></a>
+                        <a href="javascript:;"><img src="images/add_list.png" class="add"></a>
+                        <a href="javascript:;"><img src="images/red_heart.png" class="heart" alt="1"></a>
+                    </li>
+                    <li class="content">
+                        <img src="img/p9.jpg"/>
+                        <h6><a href="javascript:;">去年夏天</a></h6>
+                        <p><a href="javascript:;">王大毛</a></p>
+                        <div class="shad"></div>
+                        <a href="javascript:;"><img src="images/play_btn.png" class="ima" alt="1"></a>
+                        <a href="javascript:;"><img src="images/add_list.png" class="add"></a>
+                        <a href="javascript:;"><img src="images/red_heart.png" class="heart" alt="1"></a>
+                    </li>
+                    <li class="content">
+                        <img src="img/p10.jpg"/>
+                        <h6><a href="javascript:;">白羊</a></h6>
+                        <p><a href="javascript:;">徐秉龙/沈以诚</a></p>
+                        <div class="shad"></div>
+                        <a href="javascript:;"><img src="images/play_btn.png" class="ima" alt="1"></a>
+                        <a href="javascript:;"><img src="images/add_list.png" class="add"></a>
+                        <a href="javascript:;"><img src="images/red_heart.png" class="heart" alt="1"></a>
+                    </li>
+                    <li class="content">
+                        <img src="img/p11.jpg"/>
+                        <h6><a href="javascript:;">Planet</a></h6>
+                        <p><a href="javascript:;">ラムジ</a></p>
+                        <div class="shad"></div>
+                        <a href="javascript:;"><img src="images/play_btn.png" class="ima" alt="1"></a>
+                        <a href="javascript:;"><img src="images/add_list.png" class="add"></a>
+                        <a href="javascript:;"><img src="images/red_heart.png" class="heart" alt="1"></a>
+                    </li>
+                    <li class="content">
+                        <img src="img/p12.jpg"/>
+                        <h6><a href="javascript:;">男孩</a></h6>
+                        <p><a href="javascript:;">梁博/陶孟童/肖和东/高誉容</a></p>
+                        <div class="shad"></div>
+                        <a href="javascript:;"><img src="images/play_btn.png" class="ima" alt="1"></a>
+                        <a href="javascript:;"><img src="images/add_list.png" class="add"></a>
+                        <a href="javascript:;"><img src="images/red_heart.png" class="heart" alt="1"></a>
+                    </li>
+                </ul>
+            </div>
+            <script src="js/discover.js"></script>
+            <hr class="hrStyle"/>
+            <!--歌单-->
+            <a name="songList"></a>
+            <div class="SL">
+                <div class="d-flex">
+                    <h2 class="songList">
+                        Song List
+                    <span class="animate inline rot">
+                        <span class="bar a1 inline"></span>
+                        <span class="bar a2 inline"></span>
+                        <span class="bar a3 inline"></span>
+                        <span class="bar a4 inline"></span>
+                        <span class="bar a5 inline"></span>
+                    </span>
+                    </h2>
+                    <div>
+                        <a href="javascript:;">
+                            <img src="images/refresh.png" id="refresh"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex songList">
+                    <div class="left_list">
+                        <div class="d-flex">
+                            <div class="img1">
+                                <img src="img/songList1.jpg"/>
+                                <div class="sl_record">
+                                    <img src="images/record.png" class="sl_rotate_none">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="img2">
+                                    <img src="img/songList2.jpg"/>
+                                    <div class="lis_sum">
+                                        <img src="images/listen.png">181w
+                                    </div>
+                                    <div class="mask">
+                                        <a href="javascript:;">一个人在外漂泊，哪一刻让你很心酸？</a>
+                                    </div>
+                                </div>
+                                <div class="img3">
+                                    <img src="img/songList3.jpg"/>
+                                    <div class="lis_sum">
+                                        <img src="images/listen.png">85w
+                                    </div>
+                                    <div class="mask">
+                                        <a href="javascript:;">治愈向丨孤独时候，借你一个肩膀</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img4">
+                            <img src="img/songList4.jpg"/>
+                            <div class="lis_sum">
+                                <img src="images/listen.png">262w
+                            </div>
+                            <div class="mask">
+                                <a href="javascript:;">"世间上最璨然的烟火, 即是你的灿然一笑"</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_list">
+                        <div class="d-flex">
+                            <div class="img5">
+                                <img src="img/songList5.jpg"/>
+                                <div class="lis_sum">
+                                    <img src="images/listen.png">77w
+                                </div>
+                                <div class="mask">
+                                    <a href="javascript:;">经典复刻 | 那些惊艳耳朵的神级翻唱</a>
+                                </div>
+                            </div>
+                            <div class="img6">
+                                <img src="img/songList6.jpg"/>
+                                <div class="lis_sum">
+                                    <img src="images/listen.png">56w
+                                </div>
+                                <div class="mask">
+                                    <a href="javascript:;">岁月留声机 - 经典老歌 百听不厌 历久珍存</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="img7">
+                                <img src="img/songList7.jpg"/>
+                                <div class="lis_sum">
+                                    <img src="images/listen.png">116w
+                                </div>
+                                <div class="mask">
+                                    <a href="javascript:;">「青春印象」有没有一首歌瞬间勾起你的回忆</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex">
+                                    <div class="img8">
+                                        <img src="img/songList8.jpg"/>
+                                        <div class="lis_sum">
+                                            <img src="images/listen.png">56w
+                                        </div>
+                                        <div class="mask">
+                                            <a href="javascript:;">【拯救歌荒】100首欧美新锐歌曲</a>
+                                        </div>
+                                    </div>
+                                    <div class="img9">
+                                        <img src="img/songList9.jpg"/>
+                                        <div class="lis_sum">
+                                            <img src="images/listen.png">41w
+                                        </div>
+                                        <div class="mask">
+                                            <a href="javascript:;">【2018年度榜单】美国公告牌Billboard HOT100</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="img10">
+                                        <img src="img/songList10.jpg"/>
+                                        <div class="lis_sum">
+                                            <img src="images/listen.png">28w
+                                        </div>
+                                        <div class="mask">
+                                            <a href="javascript:;">【适合做作业，看书睡觉前】纯音乐 钢琴</a>
+                                        </div>
+                                    </div>
+                                    <div class="img11">
+                                        <img src="img/songList11.jpg"/>
+                                        <div class="lis_sum">
+                                            <img src="images/listen.png">66w
+                                        </div>
+                                        <div class="mask">
+                                            <a href="javascript:;">【古典】 散落的时光 - 钢琴与小提琴的浪漫邂逅</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="js/songList.js"></script>
+            <hr class="hrStyle"/>
+            <!--新歌首发-->
+            <a name="newSong"></a>
+            <div class="NS">
+                <div class="d-flex">
+                    <h2 class="newSongs">
+                        New songs
+                        <span class="animate inline rot">
+                            <span class="bar a1 inline"></span>
+                            <span class="bar a2 inline"></span>
+                            <span class="bar a3 inline"></span>
+                            <span class="bar a4 inline"></span>
+                            <span class="bar a5 inline"></span>
+                        </span>
+                    </h2>
+                    <div>
+                        <a href="javascript:;">
+                            <img src="images/refresh.png" id="refresh"/>
+                        </a>
+                    </div>
+                </div>
+                <!--导航-->
+                <div class="navs">
+                    <ul id="sgnav">
+                        <li><a href="javascript:;" data-toggle="sgnav" data-target="#content1">内地</a></li>
+                        <li><a href="javascript:;" data-toggle="sgnav" data-target="#content2">港台</a></li>
+                        <li><a href="javascript:;" data-toggle="sgnav" data-target="#content3">欧美</a></li>
+                        <li><a href="javascript:;" data-toggle="sgnav" data-target="#content4">日韩</a></li>
+                    </ul>
+                    <table></table>
+                </div>
+                <!--内容表-->
+                <div id="container">
+                    <div id="content1">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n1_Song1.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">演员</a></h5>
+                                            <p><a href="javascript:;">薛之谦</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:21</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n1_Song2.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">生僻字</a></h5>
+                                            <p><a href="javascript:;">陈柯宇</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:36</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n1_Song3.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">消愁(Live)</a></h5>
+                                            <p><a href="javascript:;">毛不易</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:49</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n1_Song4.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">平凡之路</a></h5>
+                                            <p><a href="javascript:;">朴树</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>05:01</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n1_Song5.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">如果这就是爱情</a></h5>
+                                            <p><a href="javascript:;">张靓颖</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:42</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n1_Song6.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">体面</a></h5>
+                                            <p><a href="javascript:;">于文文</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:42</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n1_Song7.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">小半</a></h5>
+                                            <p><a href="javascript:;">陈粒</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:55</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n1_Song8.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">山海(Live)</a></h5>
+                                            <p><a href="javascript:;">华晨宇</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>05:09</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n1_Song9.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">成都</a></h5>
+                                            <p><a href="javascript:;">赵雷</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>05:28</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n1_Song10.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">空空如也</a></h5>
+                                            <p><a href="javascript:;">任然</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:55</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n1_Song11.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">纸短情长</a></h5>
+                                            <p><a href="javascript:;">烟把儿乐队</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>02:53</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n1_Song12.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">素颜</a></h5>
+                                            <p><a href="javascript:;">许嵩</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:01</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="content2">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n2_Song1.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">她说</a></h5>
+                                            <p><a href="javascript:;">林俊杰</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>05:20</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n2_Song2.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">你就不要想起我</a></h5>
+                                            <p><a href="javascript:;">田馥甄</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:40</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n2_Song3.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">干杯</a></h5>
+                                            <p><a href="javascript:;">五月天</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:49</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n2_Song4.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">烟花易冷</a></h5>
+                                            <p><a href="javascript:;">林俊杰</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:23</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n2_Song5.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">K歌之王</a></h5>
+                                            <p><a href="javascript:;">陈奕迅</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:38</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n2_Song6.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">说谎</a></h5>
+                                            <p><a href="javascript:;">林宥嘉</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:23</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n2_Song7.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">光年之外</a></h5>
+                                            <p><a href="javascript:;">邓紫棋</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:55</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n2_Song8.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">红色高跟鞋</a></h5>
+                                            <p><a href="javascript:;">蔡健雅</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:26</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n2_Song9.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">我好想你</a></h5>
+                                            <p><a href="javascript:;">苏打绿</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>05:24</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n2_Song10.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">天后</a></h5>
+                                            <p><a href="javascript:;">陈势安</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:49</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n2_Song11.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">后来(live)</a></h5>
+                                            <p><a href="javascript:;">刘若英</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>07:26</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n2_Song12.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">忽然之间</a></h5>
+                                            <p><a href="javascript:;">莫文蔚</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:22</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="content3">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n3_Song1.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">Innocence</a></h5>
+                                            <p><a href="javascript:;">Avril Lavigne</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:53</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n3_Song2.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">Let Her Go</a></h5>
+                                            <p><a href="javascript:;">Passenger</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:12</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n3_Song3.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">Love Yourself</a></h5>
+                                            <p><a href="javascript:;">Justin Bieber</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:53</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n3_Song4.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">I'll Be There For You</a></h5>
+                                            <p><a href="javascript:;">The Rembrandts</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:06</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n3_Song5.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">When I Was Your Man</a></h5>
+                                            <p><a href="javascript:;">Bruno Mars</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:34</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n3_Song6.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">Love Story</a></h5>
+                                            <p><a href="javascript:;">Taylor Swift</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:55</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n3_Song7.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">I Am You</a></h5>
+                                            <p><a href="javascript:;">Kim Taylor</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:34</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n3_Song8.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">Stronger</a></h5>
+                                            <p><a href="javascript:;">Kelly Clarkson</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:42</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n3_Song9.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">Key To My Soul</a></h5>
+                                            <p><a href="javascript:;">Sarah Connor</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:36</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n3_Song10.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">Wrecking Ball</a></h5>
+                                            <p><a href="javascript:;">Miley Cyrus</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:34</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n3_Song11.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">My Love(Radio Edit)</a></h5>
+                                            <p><a href="javascript:;">Westlife</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:53</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n3_Song12.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">Yellow</a></h5>
+                                            <p><a href="javascript:;">Coldplay</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:29</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="content4">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n4_Song1.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">Honey(하니)(하니)</a></h5>
+                                            <p><a href="javascript:;">KARA(카라)</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:25</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n4_Song2.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">恋爱循环</a></h5>
+                                            <p><a href="javascript:;">花澤香菜</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:15</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n4_Song3.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">歌舞伎町の女王</a></h5>
+                                            <p><a href="javascript:;">椎名林檎</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>02:51</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n4_Song4.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">걱정말아요 그대</a></h5>
+                                            <p><a href="javascript:;">野菊花</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:19</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n4_Song5.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">三線の花</a></h5>
+                                            <p><a href="javascript:;">BEGIN</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>05:17</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n4_Song6.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">보여줄게</a></h5>
+                                            <p><a href="javascript:;">Ailee</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:53</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n4_Song7.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">日が落ちるまで</a></h5>
+                                            <p><a href="javascript:;">ハンバート ハンバート</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:56</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n4_Song8.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">하루하루</a></h5>
+                                            <p><a href="javascript:;">BIGBANG</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>04:16</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n4_Song9.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">DAY BY DAY</a></h5>
+                                            <p><a href="javascript:;">T-ara</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:29</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n4_Song10.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">Gee</a></h5>
+                                            <p><a href="javascript:;">少女时代</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:21</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n4_Song11.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">深海少女</a></h5>
+                                            <p><a href="javascript:;">のぶなが</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:36</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="media d-flex nsg">
+                                        <a href="javascript:;">
+                                            <img src="img/n4_Song12.jpg" class="mr-2 align-self-center"/>
+                                            <img src="images/ns_play.png" class="ns_play">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5><a href="javascript:;">君がくれたもの</a></h5>
+                                            <p><a href="javascript:;">茅野愛衣/戸松遥/早見沙織</a></p>
+                                        </div>
+                                        <div class="stime">
+                                            <p>03:29</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table></table>
+                </div>
+                <script src="./js/newSong.js"></script>
+            </div>
+            <hr class="hrStyle"/>
+            <!--排行榜-->
+            <a name="rank"></a>
+            <div class="TL">
+                <div class="d-flex">
+                    <h2 class="topList">
+                        TopList
+                        <span class="animate inline rot">
+                            <span class="bar a1 inline"></span>
+                            <span class="bar a2 inline"></span>
+                            <span class="bar a3 inline"></span>
+                            <span class="bar a4 inline"></span>
+                            <span class="bar a5 inline"></span>
+                        </span>
+                    </h2>
+                    <div>
+                        <a href="javascript:;">
+                            <img src="images/refresh.png"/ id="refresh">
+                        </a>
+                    </div>
+                </div>
+                <ul class="lists d-flex">
+                    <li class="lists-item">
+                        <div class="ban">
+                            <div class="item_left">
+                                <p class="list-title">巅峰榜</p>
+                                <p class="item-title"><a href="javascript:;">流行指数</a></p>
+                                <ul class="item-songlist">
+                                    <li>
+                                        <span class="s_num mr-2">1</span>
+                                        <span class="s_name"><a href="javascript:;">特别的人</a></span>
+                                        <div class="s_artict"><a href="javascript:;">方大同</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">2</span>
+                                        <span class="s_name"><a href="javascript:;">喜欢</a></span>
+                                        <div class="s_artict"><a href="javascript:;">阿肆</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">3</span>
+                                        <span class="s_name"><a href="javascript:;">烈酒</a></span>
+                                        <div class="s_artict"><a href="javascript:;">屈原</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">4</span>
+                                        <span class="s_name"><a href="javascript:;">第三人称</a></span>
+                                        <div class="s_artict"><a href="javascript:;">戚薇</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><img src="./images/more.png"/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item_right">
+                                <p class="list-title">巅峰榜</p>
+                                <p class="item-title"><a href="javascript:;">流行指数</a></p>
+                                <ul class="item-songlist">
+                                    <li>
+                                        <span class="s_num mr-2">1</span>
+                                        <span class="s_name"><a href="javascript:;">特别的人</a></span>
+                                        <div class="s_artict"><a href="javascript:;">方大同</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">2</span>
+                                        <span class="s_name"><a href="javascript:;">喜欢</a></span>
+                                        <div class="s_artict"><a href="javascript:;">阿肆</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">3</span>
+                                        <span class="s_name"><a href="javascript:;">烈酒</a></span>
+                                        <div class="s_artict"><a href="javascript:;">屈原</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">4</span>
+                                        <span class="s_name"><a href="javascript:;">第三人称</a></span>
+                                        <div class="s_artict"><a href="javascript:;">戚薇</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><img src="./images/more.png"/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lists-item">
+                        <div class="ban1">
+                            <div class="item_left">
+                                <p class="list-title">巅峰榜</p>
+                                <p class="item-title"><a href="javascript:;">热歌</a></p>
+                                <ul class="item-songlist">
+                                    <li>
+                                        <span class="s_num mr-2">1</span>
+                                        <span class="s_name"><a href="javascript:;">关键词</a></span>
+                                        <div class="s_artict"><a href="javascript:;">林俊杰</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">2</span>
+                                        <span class="s_name"><a href="javascript:;">知否知否</a></span>
+                                        <div class="s_artict"><a href="javascript:;">胡夏/郁可唯</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">3</span>
+                                        <span class="s_name"><a href="javascript:;">泡沫</a></span>
+                                        <div class="s_artict"><a href="javascript:;">G.E.M. 邓紫棋</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">4</span>
+                                        <span class="s_name"><a href="javascript:;">浪子回头</a></span>
+                                        <div class="s_artict"><a href="javascript:;">茄子蛋</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><img src="./images/more.png"/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item_right">
+                                <p class="list-title">巅峰榜</p>
+                                <p class="item-title"><a href="javascript:;">热歌</a></p>
+                                <ul class="item-songlist">
+                                    <li>
+                                        <span class="s_num mr-2">1</span>
+                                        <span class="s_name"><a href="javascript:;">关键词</a></span>
+                                        <div class="s_artict"><a href="javascript:;">林俊杰</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">2</span>
+                                        <span class="s_name"><a href="javascript:;">知否知否</a></span>
+                                        <div class="s_artict"><a href="javascript:;">胡夏/郁可唯</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">3</span>
+                                        <span class="s_name"><a href="javascript:;">泡沫</a></span>
+                                        <div class="s_artict"><a href="javascript:;">G.E.M. 邓紫棋</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">4</span>
+                                        <span class="s_name"><a href="javascript:;">浪子回头</a></span>
+                                        <div class="s_artict"><a href="javascript:;">茄子蛋</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><img src="./images/more.png"/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lists-item">
+                        <div class="ban2">
+                            <div class="item_left">
+                                <p class="list-title">巅峰榜</p>
+                                <p class="item-title"><a href="javascript:;">新歌</a></p>
+                                <ul class="item-songlist">
+                                    <li>
+                                        <span class="s_num mr-2">1</span>
+                                        <span class="s_name"><a href="javascript:;">Hello My Love</a></span>
+                                        <div class="s_artict"><a href="javascript:;">Westlife</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">2</span>
+                                        <span class="s_name"><a href="javascript:;">我不愿明白</a></span>
+                                        <div class="s_artict"><a href="javascript:;">火箭少女101段奥娟</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">3</span>
+                                        <span class="s_name"><a href="javascript:;">天份</a></span>
+                                        <div class="s_artict"><a href="javascript:;">薛之谦</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">4</span>
+                                        <span class="s_name"><a href="javascript:;">I'M OK</a></span>
+                                        <div class="s_artict"><a href="javascript:;">iKON</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><img src="./images/more.png"/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item_right">
+                                <p class="list-title">巅峰榜</p>
+                                <p class="item-title"><a href="javascript:;">新歌</a></p>
+                                <ul class="item-songlist">
+                                    <li>
+                                        <span class="s_num mr-2">1</span>
+                                        <span class="s_name"><a href="javascript:;">Hello My Love</a></span>
+                                        <div class="s_artict"><a href="javascript:;">Westlife</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">2</span>
+                                        <span class="s_name"><a href="javascript:;">我不愿明白</a></span>
+                                        <div class="s_artict"><a href="javascript:;">火箭少女101段奥娟</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">3</span>
+                                        <span class="s_name"><a href="javascript:;">天份</a></span>
+                                        <div class="s_artict"><a href="javascript:;">薛之谦</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">4</span>
+                                        <span class="s_name"><a href="javascript:;">I'M OK</a></span>
+                                        <div class="s_artict"><a href="javascript:;">iKON</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><img src="./images/more.png"/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lists-item">
+                        <div class="ban3">
+                            <div class="item_left">
+                                <p class="list-title">巅峰榜</p>
+                                <p class="item-title"><a href="javascript:;">音乐人原创</a></p>
+                                <ul class="item-songlist">
+                                    <li>
+                                        <span class="s_num mr-2">1</span>
+                                        <span class="s_name"><a href="javascript:;">同感</a></span>
+                                        <div class="s_artict"><a href="javascript:;">简弘亦</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">2</span>
+                                        <span class="s_name"><a href="javascript:;">小圆</a></span>
+                                        <div class="s_artict"><a href="javascript:;">暗杠</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">3</span>
+                                        <span class="s_name"><a href="javascript:;">China-L</a></span>
+                                        <div class="s_artict"><a href="javascript:;">徐梦圆</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">4</span>
+                                        <span class="s_name"><a href="javascript:;">第一个诗人诞生前</a></span>
+                                        <div class="s_artict"><a href="javascript:;">牛奶咖啡</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><img src="./images/more.png"/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item_right">
+                                <p class="list-title">巅峰榜</p>
+                                <p class="item-title"><a href="javascript:;">音乐人原创</a></p>
+                                <ul class="item-songlist">
+                                    <li>
+                                        <span class="s_num mr-2">1</span>
+                                        <span class="s_name"><a href="javascript:;">同感</a></span>
+                                        <div class="s_artict"><a href="javascript:;">简弘亦</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">2</span>
+                                        <span class="s_name"><a href="javascript:;">小圆</a></span>
+                                        <div class="s_artict"><a href="javascript:;">暗杠</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">3</span>
+                                        <span class="s_name"><a href="javascript:;">China-L</a></span>
+                                        <div class="s_artict"><a href="javascript:;">徐梦圆</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">4</span>
+                                        <span class="s_name"><a href="javascript:;">第一个诗人诞生前</a></span>
+                                        <div class="s_artict"><a href="javascript:;">牛奶咖啡</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><img src="./images/more.png"/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lists-item">
+                        <div class="ban4">
+                            <div class="item_left">
+                                <p class="list-title">巅峰榜</p>
+                                <p class="item-title"><a href="javascript:;">MV</a></p>
+                                <ul class="item-songlist">
+                                    <li>
+                                        <span class="s_num mr-2">1</span>
+                                        <span class="s_name"><a href="javascript:;">转眼</a></span>
+                                        <div class="s_artict"><a href="javascript:;">五月天</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">2</span>
+                                        <span class="s_name"><a href="javascript:;">别再闹了</a></span>
+                                        <div class="s_artict"><a href="javascript:;">毛不易</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">3</span>
+                                        <span class="s_name"><a href="javascript:;">La La Love</a></span>
+                                        <div class="s_artict"><a href="javascript:;">宇宙少女</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">4</span>
+                                        <span class="s_name"><a href="javascript:;">怪美的</a></span>
+                                        <div class="s_artict"><a href="javascript:;">蔡依林</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><img src="./images/more.png"/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item_right">
+                                <p class="list-title">巅峰榜</p>
+                                <p class="item-title"><a href="javascript:;">MV</a></p>
+                                <ul class="item-songlist">
+                                    <li>
+                                        <span class="s_num mr-2">1</span>
+                                        <span class="s_name"><a href="javascript:;">转眼</a></span>
+                                        <div class="s_artict"><a href="javascript:;">五月天</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">2</span>
+                                        <span class="s_name"><a href="javascript:;">别再闹了</a></span>
+                                        <div class="s_artict"><a href="javascript:;">毛不易</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">3</span>
+                                        <span class="s_name"><a href="javascript:;">La La Love</a></span>
+                                        <div class="s_artict"><a href="javascript:;">宇宙少女</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="s_num mr-2">4</span>
+                                        <span class="s_name"><a href="javascript:;">怪美的</a></span>
+                                        <div class="s_artict"><a href="javascript:;">蔡依林</a></div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><img src="./images/more.png"/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <hr class="hrStyle"/>
+            <!--mv-->
+            <a name="mv"></a>
+            <div class="MV">
+                <div class="d-flex">
+                    <h2 class="mv_title">
+                        MV
+                        <span class="animate inline rot">
+                            <span class="bar a1 inline"></span>
+                            <span class="bar a2 inline"></span>
+                            <span class="bar a3 inline"></span>
+                            <span class="bar a4 inline"></span>
+                            <span class="bar a5 inline"></span>
+                        </span>
+                    </h2>
+                    <div>
+                        <a href="javascript:;">
+                            <img src="images/refresh.png" id="refresh"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="outBox">
+                    <div class="mv_details d-flex md_1">
+                            <div>
+                                <a href="javascript:;"><img src="img/mv_pic1.jpg" class="mv_pic"></a>
+                                <p><a href="javascript:;">我们万岁</a></p>
+                                <p><a href="javascript:;">陈奕迅</a></p>
+                                <p>
+                                    <img src="images/play_num.png" class="play_num">
+                                    <span>58.7w</span>
+                                </p>
+                            </div>
+                            <div>
+                                <a href="javascript:;"><img src="img/mv_pic2.jpg" class="mv_pic"></a>
+                                <p><a href="javascript:;">岩石里的花</a></p>
+                                <p><a href="javascript:;">G.E.M. 邓紫棋</a></p>
+                                <p>
+                                    <img src="images/play_num.png" class="play_num">
+                                    <span>179.1w</span>
+                                </p>
+                            </div>
+                            <div>
+                                <a href="javascript:;"><img src="img/mv_pic3.jpg" class="mv_pic"></a>
+                                <p><a href="javascript:;">局中局</a></p>
+                                <p><a href="javascript:;">尹姝贻</a></p>
+                                <p>
+                                    <img src="images/play_num.png" class="play_num">
+                                    <span>1.1w</span>
+                                </p>
+                            </div>
+                            <div>
+                                <a href="javascript:;"><img src="img/mv_pic4.jpg" class="mv_pic"></a>
+                                <p><a href="javascript:;">Colder</a></p>
+                                <p><a href="javascript:;">Nina Nesbitt</a></p>
+                                <p>
+                                    <img src="images/play_num.png" class="play_num">
+                                    <span>1529</span>
+                                </p>
+                            </div>
+                            <div>
+                                <a href="javascript:;"><img src="img/mv_pic5.jpg" class="mv_pic"></a>
+                                <p><a href="javascript:;">Faking It</a></p>
+                                <p><a href="javascript:;">Sasha sloan</a></p>
+                                <p>
+                                    <img src="images/play_num.png" class="play_num">
+                                    <span>2656</span>
+                                </p>
+                            </div>
+                    </div>
+                    <div class="mv_details d-flex md_2">
+                    <div>
+                        <a href="javascript:;"><img src="img/mv_pic6.jpg" class="mv_pic"></a>
+                        <p><a href="javascript:;">LIKEY</a></p>
+                        <p><a href="javascript:;">TWICE</a></p>
+                        <p>
+                            <img src="images/play_num.png" class="play_num">
+                            <span>9579</span>
+                        </p>
+                    </div>
+                    <div>
+                        <a href="javascript:;"><img src="img/mv_pic7.jpg" class="mv_pic"></a>
+                        <p><a href="javascript:;">望穿</a></p>
+                        <p><a href="javascript:;">陈粒</a></p>
+                        <p>
+                            <img src="images/play_num.png" class="play_num">
+                            <span>24.6w</span>
+                        </p>
+                    </div>
+                    <div>
+                        <a href="javascript:;"><img src="img/mv_pic8.jpg" class="mv_pic"></a>
+                        <p><a href="javascript:;">音ノ国</a></p>
+                        <p><a href="javascript:;">きゃりーぱみゅぱみゅ</a></p>
+                        <p>
+                            <img src="images/play_num.png" class="play_num">
+                            <span>8.5w</span>
+                        </p>
+                    </div>
+                    <div>
+                        <a href="javascript:;"><img src="img/mv_pic9.jpg" class="mv_pic"></a>
+                        <p><a href="javascript:;">一半人生</a></p>
+                        <p><a href="javascript:;">阿信</a></p>
+                        <p>
+                            <img src="images/play_num.png" class="play_num">
+                            <span>58.7w</span>
+                        </p>
+                    </div>
+                    <div>
+                        <a href="javascript:;"><img src="img/mv_pic10.jpg" class="mv_pic"></a>
+                        <p><a href="javascript:;">缘起</a></p>
+                        <p><a href="javascript:;">周深</a></p>
+                        <p>
+                            <img src="images/play_num.png" class="play_num">
+                            <span>23.2w</span>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <script src="js/mv.js"></script>
+            <hr class="hrStyle"/>
+        </section>
+        <aside>
+            <div class="right_fix">
+                <div class="contacts">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item w-50 text-center">
+                            <a href="#p1" class="nav-link active" data-toggle="pill">发现Ta</a>
+                        </li>
+                        <li class="nav-item w-50 text-center">
+                            <a href="#p2" class="nav-link" data-toggle="pill">好友</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="p1">
+                            <ul class="list-unstyled">
+                                <li class="d-flex users">
+                                    <div>
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="javascript:;">KANQQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">New York-USA</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="d-flex users">
+                                    <div>
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="javascript:;">琪琪康</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Beijing-China</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="d-flex users">
+                                    <div>
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="javascript:;">pipiqi</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Yokohama-Japan</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="d-flex users">
+                                    <div>
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="javascript:;">琪咕噜咕噜斯基</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">St.Petersburg-Russia</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="d-flex users">
+                                    <div>
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="javascript:;">阿琪</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Taiwan-China</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="d-flex users">
+                                    <div>
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="javascript:;">Parke</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Paris-France</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="d-flex users">
+                                    <div>
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="javascript:;">洛奇</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">London-UK</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="p2">
+                            <ul class="list-unstyled">
+                                <li class="d-flex users">
+                                    <div>
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="javascript:;">帅帅峰</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">说书人（暗杠/寅子）</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="d-flex users">
+                                    <div>
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="javascript:;">峰峰帅</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">她曾活过啊（あいみょん）</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="d-flex users">
+                                    <div>
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="javascript:;">王大帅</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">不为谁而作的歌（林俊杰）</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="d-flex users">
+                                    <div>
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="javascript:;">王小帅</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">坚强的理由（莫文蔚/伍佰）</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="d-flex users">
+                                    <div>
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="javascript:;">猫饼王</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">喵（花粥）</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <script src="js/aside.js"></script>
+    </div>
+    <footer>
+        <div>下载star音乐客户端</div>
+        <ul class="list-unstyled d-flex">
+            <li>
+                <a href="javascript:;">
+                    <img src="images/windows.png">
+                </a>
+                <a href="javascript:;">
+                    <div>PC版</div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/macOS.png">
+                    <img src="images/macOS1.png" class="iHide">
+                </a>
+                <a href="javascript:;">
+                    <div>Mac版</div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/android.png">
+                    <img src="images/android1.png" class="iHide">
+                </a>
+                <a href="javascript:;">
+                    <div>Android版</div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/apple.png">
+                    <img src="images/apple1.png" class="iHide">
+                </a>
+                <a href="javascript:;">
+                    <div>iphone版</div>
+                </a>
+            </li>
+        </ul>
+        <div>
+            <a href="javascript:;">关于猫饼</a> |
+            <a href="javascript:;">About Yahong</a> |
+            <a href="javascript:;">服务条款</a> |
+            <a href="javascript:;">用户服务协议</a> |
+            <a href="javascript:;">隐私政策</a> |
+            <a href="javascript:;">权利声明</a> |
+            <a href="javascript:;">广告服务</a> |
+            <a href="javascript:;">猫饼招聘</a> |
+            <a href="javascript:;">客服中心</a>
+            <div>
+                Copyright &copy; 2019 - 20xx Yahong. All Rights Reserved.
+            </div>
+            <div>
+                猫饼公司 版权所有
+            </div>
+        </div>
+    </footer>
+    <script src="js/footer.js"></script>
+</body>
+</html>

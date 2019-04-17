@@ -1,0 +1,111 @@
+.newSongs,table{
+    margin-left:0.8rem;
+    margin-right:0.5rem;
+}
+h2.newSongs{
+    color:#788188;
+    margin-left:1.5rem;
+    margin-top:2rem;
+    margin-bottom:1.2rem;
+}
+
+h2.newSongs+div{
+    margin-left:71%;
+    margin-top:3.5rem;
+}
+h2.newSongs+div img{
+    height:1.5rem;
+}
+.newSongs .a1{
+    background:#c6d94a;
+}
+.newSongs .a2{
+    background:#ffeea6;
+}
+.newSongs .a3{
+    background:#bfc29f;
+}
+.newSongs .a4{
+    background:#c3e3e3;
+}
+.newSongs .a5{
+    background:#5bb589;
+}
+.NS{
+    height:45rem;
+}
+.NS table{
+    table-layout:fixed;
+    width:98%;
+    border-collapse:separate;
+    border-spacing:1rem;
+}
+.NS table .nsg{
+    background:#474747;
+    position: relative;
+}
+.NS table .nsg .ns_play{
+    width: 4rem;
+    height: 4rem;
+    background:rgba(0,0,0,0.7);
+    border-radius: 50%;
+    position: absolute; 
+    top: 1rem;
+    left: 1rem;
+    display: none;
+}
+.NS table img{
+    width:6rem;
+    height:6rem;
+}
+.NS table a{
+    text-decoration:none;
+}
+.NS table h5{
+    margin-top:1.3rem;
+    font-size:1.5rem;
+}
+.NS table h5 a{
+    font-weight:500;
+    color:#e2e3e5;
+}
+.NS table p{
+    margin-bottom:0;
+    color:#788188;
+}
+.NS table p a{
+    color:#788188;
+}
+.NS table .stime{
+    margin-top:2.25rem;
+    margin-right:1rem;
+}
+/*�¸��Ƽ� ����*/
+.navs{
+    width:100%;
+}
+#sgnav{
+    margin-left:33rem;
+}
+#sgnav li{
+    float:left;
+    list-style:none;
+}
+#sgnav li a{
+    font-size:1.4rem;
+    display:inline-block;
+    text-decoration:none;
+    width:7rem;
+    height:3.2rem;
+    line-height:3.2rem;
+    text-align:center;
+    color:#e2e3e5;
+}
+#container{
+    position:relative;
+}
+#content1,#content2,#content3,#content4{
+    position:absolute;
+    top:2rem;
+    left:0;
+}

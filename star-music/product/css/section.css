@@ -1,0 +1,197 @@
+section{
+    margin-left:5%;
+    width:83%;
+}
+.alignLine{
+    margin-left:1rem;
+}
+.disc{
+    clear:both;
+    margin-bottom:3rem;
+}
+.alignLine li>img,.shad{
+    height:22.5rem;
+    margin:0 0.5rem;
+    border-radius:7px;
+}
+section div h2{
+    color:#788188;
+    font-size:3rem;
+    margin-top:2rem;
+    margin-bottom:1.2rem;
+}
+h2.alignLine{
+    margin-left:1.5rem;
+}
+.inline{
+    display:inline-block !important;
+}
+h2 span.animate{
+    width:100px;
+    height:40px;
+    position:relative;
+    transform-origin:20% 52%;
+    transform:rotate(180deg);
+}
+.animate .bar{
+    width:0.4rem;
+    position:absolute;
+    top:6%;
+}
+@keyframes movinga1{
+    0% {
+        height: 32%;
+    }
+    25% {
+        height: 80%;
+    }
+    50% {
+        height: 56%;
+    }
+    75% {
+        height: 100%;
+    }
+
+    100% {
+        height: 84%;
+    }
+}
+.animate .a1{
+    left:0;
+    animation: movinga1 1s infinite alternate both;
+}
+@keyframes movinga2{
+    0% {
+        height: 20%;
+    }
+    25% {
+        height: 58%;
+    }
+    50% {
+        height: 90%;
+    }
+    75% {
+        height: 74%;
+    }
+    100% {
+        height: 53%;
+    }
+}
+.animate .a2{
+    left:7%;
+    animation: movinga2 1s infinite alternate both;
+}
+@keyframes movinga3{
+    0% {
+        height: 34%;
+    }
+    25% {
+        height: 69%;
+    }
+    50% {
+        height: 100%;
+    }
+    75% {
+        height: 82%;
+    }
+    100% {
+        height: 41%;
+    }
+}
+.animate .a3{
+    left:14%;
+    animation: movinga3 1s infinite alternate both;
+}
+@keyframes movinga4{
+    0% {
+        height: 80%;
+    }
+    25% {
+        height: 49%;
+    }
+    50% {
+        height: 59%;
+    }
+    75% {
+        height: 82%;
+    }
+    100% {
+        height: 65%;
+    }
+}
+.animate .a4{
+    left:21%;
+    animation: movinga4 1s infinite alternate both;
+}
+@keyframes movinga5{
+    0% {
+        height: 50%;
+    }
+    25% {
+        height: 30%;
+    }
+    50% {
+        height: 90%;
+    }
+    75% {
+        height: 50%;
+    }
+    100% {
+        height: 65%;
+    }
+}
+.animate .a5{
+    left:28%;
+    animation: movinga5 1s infinite alternate both;
+}
+h2.alignLine+div,h2.songList+div{
+    margin-left:75.5%;
+    margin-top:3.5rem;
+}
+h2.alignLine+div img,h2.songList+div img{
+    height:1.5rem;
+    transition:all 1s;
+}
+ul li a,ul li a:hover{
+    color:#788188;
+    text-decoration:none;
+}
+ul li h6{
+    margin:0.7rem 0 0 0.7rem;
+    font-size:1.1rem;
+}
+ul li p{
+    margin:0.3rem 0 0.5rem 0.7rem;
+    font-size:0.8rem;
+}
+/*    */
+.content{
+    position: relative;
+}
+.shad{
+    width: 15rem;
+    background:#000;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 4rem;
+    display: none;
+}
+.ima,.add,.heart{
+    height: 4.5rem;
+    position: absolute;
+    top: 9rem;
+    left: 6rem;
+    display: none;
+    z-index: 10;
+}
+.ima:hover{
+    transform: scale(1.1);
+}
+.add,.heart{
+    height: 1.5rem;
+    top: 20.5rem;
+    left: 1rem;
+}
+.heart{
+    left: 13.5rem;
+}

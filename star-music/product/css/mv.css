@@ -1,0 +1,78 @@
+.mv_title{
+    margin-left:1.5rem;
+    margin-right:1.5rem;
+}
+h2.mv_title{
+    color:#788188;
+    margin-top:2rem;
+    margin-bottom:1.2rem;
+}
+.mv_title .a1{
+    background:#24d197;
+}
+.mv_title .a2{
+    background:#86e65a;
+}
+.mv_title .a3{
+    background:#ffb8b8;
+}
+.mv_title .a4{
+    background:#79e8d0;
+}
+.mv_title .a5{
+    background:#ecf752;
+}
+h2.mv_title+div{
+    margin-left:81%;
+    margin-top:3.2rem;
+}
+h2.mv_title+div img{
+    height:1.5rem;
+}
+.mv_details{
+    width: 100%;
+    margin:1.5rem 1.8rem 4rem 0;
+    background: #212121;
+}
+.mv_details p{
+    margin:0; 
+}
+.mv_details a{
+    text-decoration: none;
+}
+.mv_details p a,.mv_details p span{
+    color:#afafa5;
+    vertical-align: middle;
+}
+.mv_details div p:nth-child(2) a{
+    color: #fff;
+    font-size:1.2rem;   
+}
+.mv_details .mv_pic{
+    width:100%; 
+}
+.mv_details .play_num{
+    height:1.5rem; 
+}
+.mv_details div{
+    width:20%;
+    margin:0.5rem;
+}
+.outBox{
+    width:96.5%;
+    height:20rem;
+    position: relative;
+    overflow: hidden;
+    margin-left: 1.5rem;
+    margin-bottom: 4rem;
+}
+.outBox>div{
+    position: absolute;
+    transition: all 3s linear;
+}
+.md_1{
+    left:0;
+}
+.md_2{
+    left:95.2rem;
+}

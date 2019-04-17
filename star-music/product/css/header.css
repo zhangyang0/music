@@ -1,0 +1,114 @@
+body{
+    margin:0;
+    padding:0;
+    background:#272727;
+}
+.bg{
+    width:100%;
+    height:25rem;
+    background:url('../img/bg_pic2.jpg') no-repeat center center;
+    background-size:cover;
+    position:relative;
+}
+.bg span:first-child{
+    font:italic 800 12rem mv-boli;
+    color:transparent;
+    background:linear-gradient(0deg, #feffff 0%, #b8dcdf 50%, #83e9f1 100%);
+    -webkit-background-clip:text;
+    position:absolute;
+    top:3rem;
+    left:23%;
+}
+.bg span:last-child{
+    font:400 2rem mv-boli;
+    color:transparent;
+    background:linear-gradient(90deg, #96fbc4 0%, #d9ded8 50%, #f0c6f9 100%);
+    -webkit-background-clip:text;
+    position:absolute;
+    top:17rem;
+    left:32%;
+}
+.icon{
+    width:100%;
+    height:5rem;
+    background: #b891c8;
+}
+.icon img{
+    height:2.5rem;
+}
+.icon div:first-child{
+    width:5%;
+}
+.icon div:first-child img{
+    margin-left:1.6rem;
+    margin-top:1.4rem;
+}
+.search{
+    width:82%;
+    height:5rem;
+    background:#fff;
+}
+.search img{
+    height:1.5rem;
+}
+.search li:first-child{
+    width:4%;
+    background:#f7f7f7;
+}
+.search li:first-child img{
+    margin-left:1.3rem;
+    margin-top:1.9rem;
+}
+.search li:nth-child(2){
+    width:8%;
+}
+.search li:nth-child(2) img{
+    margin-left:4rem;
+    margin-top:1.8rem;
+}
+.search li:nth-child(3){
+    width:20%;
+}
+.search li:nth-child(3) input{
+    width:100%;
+    margin-top:1.5rem;
+    font-size:1.2rem;
+    border:none;
+    outline:none;
+}
+.userMsg{
+    width:13%;
+    height:5rem;
+    background:#fff;
+}
+.userMsg img{
+    height:1.5rem;
+}
+.userMsg li:first-child{
+    width:20%;
+}
+.userMsg li:first-child:hover,.userMsg li:last-child:hover{
+    background:#f7f7f7;
+}
+.userMsg li:first-child img{
+    margin-top:1.7rem;
+    margin-left:0.9rem;
+}
+.userMsg li:last-child{
+    width:80%;
+}
+.userMsg li:last-child a{
+    color:#707070;
+    font-size:1rem;
+    margin-left:1rem;
+}
+.userMsg li:last-child a:hover{
+    text-decoration:none;
+}
+.userMsg li:last-child span{
+    line-height:5rem;
+}
+.userMsg li:last-child .headPic{
+    height:3rem;
+}
+

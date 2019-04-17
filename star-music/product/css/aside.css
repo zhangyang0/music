@@ -1,0 +1,42 @@
+/*�����б�*/
+.right_fix{
+    position:fixed;
+    width:12%;
+}
+.contacts{
+    width:100%;
+    height:455px;
+    background:#232c32;
+}
+.nav-pills .nav-link{
+    border-radius:0;
+    border-top-left-radius:0.25rem;
+    border-top-right-radius:0.25rem;
+    background:#232c32;
+    color:#b891c8;
+}
+.nav-pills .nav-link.active{
+    background:#b891c8;
+}
+.tab-content img{
+    height:2.5rem;
+}
+#p1 ul li.users,#p2 ul li.users{
+    margin-top:1rem;
+    margin-left:1rem;
+}
+.users ul li{
+    margin-left:0.5rem;
+    margin-top:-0.2rem;
+}
+.users ul li:first-child a{
+    color:#fff;
+}
+.users ul li:last-child a{
+    color:#f8f9fa;
+    font-size:0.7rem;
+}
+#p1>ul>li:hover,#p2>ul>li:hover{
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #434749;
+}
